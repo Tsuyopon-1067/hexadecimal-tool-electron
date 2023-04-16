@@ -8,6 +8,13 @@
 </head>
 
 <body>
+    <div class="deleteBtnTop">
+        <div class="deleteBtnTopLeft"></div>
+        <div class="deleteBtnList">
+            <button type="button" class="deleteButton" onclick="clickDeleteButton()">←</button>
+            <button type="button" class="deleteButton" onclick="clickClearButton()">x</button>
+        </div>
+    </div>
     <div class="main">
         <div class="numList">
             <p class="displayNum" id="displayHexP">0x0</p>
@@ -19,26 +26,22 @@
         </div>
         <div class="side">
             <div class="btnList">
-                <button type="button" onclick="clickNumButton(0)">0 : 0x0000</button>
-                <button type="button" onclick="clickNumButton(1)">1 : 0x0001</button>
-                <button type="button" onclick="clickNumButton(2)">2 : 0x0010</button>
-                <button type="button" onclick="clickNumButton(3)">3 : 0x0011</button>
-                <button type="button" onclick="clickNumButton(4)">4 : 0x0100</button>
-                <button type="button" onclick="clickNumButton(5)">5 : 0x0101</button>
-                <button type="button" onclick="clickNumButton(6)">6 : 0x0110</button>
-                <button type="button" onclick="clickNumButton(7)">7 : 0x0111</button>
-                <button type="button" onclick="clickNumButton(8)">8 : 0x1000</button>
-                <button type="button" onclick="clickNumButton(9)">9 : 0x1001</button>
-                <button type="button" onclick="clickNumButton(10)">A : 0x1010</button>
-                <button type="button" onclick="clickNumButton(11)">B : 0x1011</button>
-                <button type="button" onclick="clickNumButton(12)">C : 0x1100</button>
-                <button type="button" onclick="clickNumButton(13)">D : 0x1101</button>
-                <button type="button" onclick="clickNumButton(14)">E : 0x1110</button>
-                <button type="button" onclick="clickNumButton(15)">F : 0x1111</button>
-            </div>
-            <div class="deleteBtnList">
-                <button type="button" onclick="clickDeleteButton()">←</button>
-                <button type="button" onclick="clickClearButton()">x</button>
+                <button type="button" class="numButton" onclick="clickNumButton(0)">0 : 0x0000</button>
+                <button type="button" class="numButton" onclick="clickNumButton(1)">1 : 0x0001</button>
+                <button type="button" class="numButton" onclick="clickNumButton(2)">2 : 0x0010</button>
+                <button type="button" class="numButton" onclick="clickNumButton(3)">3 : 0x0011</button>
+                <button type="button" class="numButton" onclick="clickNumButton(4)">4 : 0x0100</button>
+                <button type="button" class="numButton" onclick="clickNumButton(5)">5 : 0x0101</button>
+                <button type="button" class="numButton" onclick="clickNumButton(6)">6 : 0x0110</button>
+                <button type="button" class="numButton" onclick="clickNumButton(7)">7 : 0x0111</button>
+                <button type="button" class="numButton" onclick="clickNumButton(8)">8 : 0x1000</button>
+                <button type="button" class="numButton" onclick="clickNumButton(9)">9 : 0x1001</button>
+                <button type="button" class="numButton" onclick="clickNumButton(10)">A : 0x1010</button>
+                <button type="button" class="numButton" onclick="clickNumButton(11)">B : 0x1011</button>
+                <button type="button" class="numButton" onclick="clickNumButton(12)">C : 0x1100</button>
+                <button type="button" class="numButton" onclick="clickNumButton(13)">D : 0x1101</button>
+                <button type="button" class="numButton" onclick="clickNumButton(14)">E : 0x1110</button>
+                <button type="button" class="numButton" onclick="clickNumButton(15)">F : 0x1111</button>
             </div>
         </div>
     </div>
