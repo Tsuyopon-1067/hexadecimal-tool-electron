@@ -8,24 +8,22 @@
 </head>
 
 <body>
-    <div class="deleteBtnTop">
-        <div class="deleteBtnTopLeft"></div>
-        <div class="deleteBtnList">
-            <button type="button" class="deleteButton" onclick="clickDeleteButton()">←</button>
-            <button type="button" class="deleteButton" onclick="clickClearButton()">x</button>
-        </div>
-    </div>
+    <div class="topBar"> </div>
     <div class="main">
         <div class="numList">
-            <p class="displayNum" id="displayHexP">0x0</p>
-            <p class="displayNum" id="displayBinP">0b0</p>
+            <p class="displayNum" id="displayHexP">0x</p>
+            <p class="displayNum" id="displayBinP">0b</p>
             <p class="displayNum" id="displayDecP">0</p>
-            <p class="displayNum" id="displayHexM">0x0</p>
-            <p class="displayNum" id="displayBinM">0b0</p>
+            <p class="displayNum" id="displayHexM">0x</p>
+            <p class="displayNum" id="displayBinM">0b</p>
             <p class="displayNum" id="displayDecM">0</p>
         </div>
         <div class="side">
             <div class="btnList">
+                <div class="deleteBtnList">
+                    <button type="button" class="deleteButton" onclick="clickDeleteButton()">←</button>
+                    <button type="button" class="deleteButton" onclick="clickClearButton()">x</button>
+                </div>
                 <button type="button" class="numButton" onclick="clickNumButton(0)">0 : 0x0000</button>
                 <button type="button" class="numButton" onclick="clickNumButton(1)">1 : 0x0001</button>
                 <button type="button" class="numButton" onclick="clickNumButton(2)">2 : 0x0010</button>
