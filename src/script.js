@@ -15,4 +15,10 @@ function clickNumButton(x) {
     }
     console.log(binList);
 
+    dec = 0;
+    for (let i = keta - 1; i > 0; i--) {
+        dec += Math.pow(2, keta - 1 - i) * binList[i];
+    }
+    dec -= Math.pow(2, keta - 1) * binList[0];
+    console.log(dec);
 }
