@@ -5,13 +5,44 @@
     <!-- https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>初めてのElectron</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1>初めてのElectron</h1>
-    <p>
-        We are using Node.js <span id="node-version"></span>,<br /> Chromium <span id="chrome-version"></span>,<br /> and Electron <span id="electron-version"></span>.
-    </p>
+    <div class="main">
+        <div class="numList">
+            <p>0x0</p>
+            <p>0x0</p>
+            <p>0b0</p>
+            <p>0b0</p>
+            <p>0</p>
+            <p>0</p>
+        </div>
+        <div class="side">
+            <div class="btnList">
+                <button type="button">0 : 0x0000</button>
+                <button type="button">1 : 0x0001</button>
+                <button type="button">2 : 0x0010</button>
+                <button type="button">3 : 0x0011</button>
+                <button type="button">4 : 0x0100</button>
+                <button type="button">5 : 0x0101</button>
+                <button type="button">6 : 0x0110</button>
+                <button type="button">7 : 0x0111</button>
+                <button type="button">8 : 0x1000</button>
+                <button type="button">9 : 0x1001</button>
+                <button type="button">A : 0x1010</button>
+                <button type="button">B : 0x1011</button>
+                <button type="button">C : 0x1100</button>
+                <button type="button">D : 0x1101</button>
+                <button type="button">E : 0x1110</button>
+                <button type="button">F : 0x1111</button>
+            </div>
+            <div class="deleteBtnList">
+                <button type="button">←</button>
+                <button type="button">x</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

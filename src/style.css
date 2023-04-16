@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+}
+
+.numList {
+    display: flex;
+    flex-flow: column;
+    background-color: aquamarine;
+}
+
+.btnList {
+    display: flex;
+    flex-flow: column;
+}
+
+.deleteBtnList {
+    display: flex;
+}
