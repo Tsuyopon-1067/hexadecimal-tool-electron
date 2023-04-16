@@ -13,7 +13,22 @@ function clickNumButton(x) {
         }
     }
     console.log(binList);
+    renew();
+}
 
+function clickDeleteButton() {
+    for (let i = 0; i < 4; i++) {
+        binList.pop();
+    }
+    renew();
+}
+
+function clickClearButton() {
+    binList = [];
+    renew();
+}
+
+function renew() {
     // 2の補数を求める
     binListHosu = getBinComplement(binList);
 
@@ -66,7 +81,9 @@ function getDec(lst) {
     for (let i = lst.length - 1; i > 0; i--) {
         res += Math.pow(2, lst.length - 1 - i) * lst[i];
     }
-    res -= Math.pow(2, lst.length - 1) * lst[0];
+    if (lst.length != 0) {
+        res -= Math.pow(2, lst.length - 1) * lst[0];
+    }
     return res;
 }
 
