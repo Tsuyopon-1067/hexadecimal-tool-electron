@@ -18,6 +18,14 @@ function clickNumButton(x) {
         binListHosu[i] = 1 - binListHosu[i];
     }
 
+    // 2進数のテキストを用意する
+    binText = "0b";
+    binTextHosu = "0b";
+    for (let i = 0; i < binList.length; i++) {
+        binText += binList[i].toString();
+        binTextHosu += binListHosu[i].toString();
+    }
+
     // 10進数に変換する
     dec = 0;
     decHosu = 0;
@@ -44,6 +52,8 @@ function clickNumButton(x) {
 
     console.log(dec);
     console.log(decHosu);
+    console.log(binText);
+    console.log(binTextHosu);
     console.log(hexText);
     console.log(hexTextHosu);
 }
