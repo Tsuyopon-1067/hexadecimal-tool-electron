@@ -29,6 +29,8 @@ function clickNumButton(x) {
     hexText = getHex(binList);
     hexTextHosu = getHex(binListHosu);
 
+    // pタグに反映させる
+    renweDisplay(dec.toString(), decHosu.toString(), binText, binTextHosu, hexText, hexTextHosu);
     console.log(dec);
     console.log(decHosu);
     console.log(binText);
@@ -48,9 +50,12 @@ function getBinComplement(lst) {
 
 function getBinText(lst) {
     // ２進数配列を文字列化する
-    res = "0b";
+    res = "0b ";
     for (let i = 0; i < lst.length; i++) {
         res += lst[i].toString();
+        if (i % 4 == 3) {
+            res += "  ";
+        }
     }
     return res;
 }
@@ -67,7 +72,7 @@ function getDec(lst) {
 
 function getHex(lst) {
     // 16進数に変換する
-    res = "0x";
+    res = "0x ";
     for (let i = 0; i < lst.length; i += 4) {
         tmp = 0;
         for (let j = 0; j < 4; j++) {
@@ -100,4 +105,13 @@ function getHexToken(x) {
                 return "";
         }
     }
+}
+
+function renweDisplay(dec, decHosu, bin, binHosu, hex, hexHosu) {
+    document.getElementById("displayHexP").innerHTML = hex;
+    document.getElementById("displayHexM").innerHTML = hexHosu;
+    document.getElementById("displayBinP").innerHTML = bin;
+    document.getElementById("displayBinM").innerHTML = binHosu;
+    document.getElementById("displayDecP").innerHTML = dec;
+    document.getElementById("displayDecM").innerHTML = decHosu;
 }
