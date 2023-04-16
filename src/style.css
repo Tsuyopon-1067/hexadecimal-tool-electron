@@ -61,6 +61,10 @@ body {
     border-color: #04cbb0;
 }
 
+.deleteButton:hover {
+    box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
 .btnList {
     display: flex;
     flex-flow: column;
@@ -69,10 +73,27 @@ body {
 .numButton {
     margin: 4px;
     padding: 4px;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     border-radius: 5px;
     border: none;
-    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.3);
     background-color: #04cbb0;
     color: white;
+    -webkit-transition: 0.3s;
+}
+
+.numButton:hover {
+    box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ripple {
+    position: absolute;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 100%;
+    transform: scale(0.2);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-animation: ripple .75s ease-out;
+    -moz-animation: ripple .75s ease-out;
+    animation: ripple .75s ease-out;
 }
