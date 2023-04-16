@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>初めてのElectron</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -11,31 +10,31 @@
 <body>
     <div class="main">
         <div class="numList">
-            <p>0x0</p>
-            <p>0x0</p>
-            <p>0b0</p>
-            <p>0b0</p>
-            <p>0</p>
-            <p>0</p>
+            <p class="displayNum" id="hexP">0x0</p>
+            <p class="displayNum" id="hexM">0x0</p>
+            <p class="displayNum" id="binP">0b0</p>
+            <p class="displayNum" id="binM">0b0</p>
+            <p class="displayNum" id="decP">0</p>
+            <p class="displayNum" id="decM">0</p>
         </div>
         <div class="side">
             <div class="btnList">
-                <button type="button">0 : 0x0000</button>
-                <button type="button">1 : 0x0001</button>
-                <button type="button">2 : 0x0010</button>
-                <button type="button">3 : 0x0011</button>
-                <button type="button">4 : 0x0100</button>
-                <button type="button">5 : 0x0101</button>
-                <button type="button">6 : 0x0110</button>
-                <button type="button">7 : 0x0111</button>
-                <button type="button">8 : 0x1000</button>
-                <button type="button">9 : 0x1001</button>
-                <button type="button">A : 0x1010</button>
-                <button type="button">B : 0x1011</button>
-                <button type="button">C : 0x1100</button>
-                <button type="button">D : 0x1101</button>
-                <button type="button">E : 0x1110</button>
-                <button type="button">F : 0x1111</button>
+                <button type="button" onclick="clickNumButton(0)">0 : 0x0000</button>
+                <button type="button" onclick="clickNumButton(1)">1 : 0x0001</button>
+                <button type="button" onclick="clickNumButton(2)">2 : 0x0010</button>
+                <button type="button" onclick="clickNumButton(3)">3 : 0x0011</button>
+                <button type="button" onclick="clickNumButton(4)">4 : 0x0100</button>
+                <button type="button" onclick="clickNumButton(5)">5 : 0x0101</button>
+                <button type="button" onclick="clickNumButton(6)">6 : 0x0110</button>
+                <button type="button" onclick="clickNumButton(7)">7 : 0x0111</button>
+                <button type="button" onclick="clickNumButton(8)">8 : 0x1000</button>
+                <button type="button" onclick="clickNumButton(9)">9 : 0x1001</button>
+                <button type="button" onclick="clickNumButton(10)">A : 0x1010</button>
+                <button type="button" onclick="clickNumButton(11)">B : 0x1011</button>
+                <button type="button" onclick="clickNumButton(12)">C : 0x1100</button>
+                <button type="button" onclick="clickNumButton(13)">D : 0x1101</button>
+                <button type="button" onclick="clickNumButton(14)">E : 0x1110</button>
+                <button type="button" onclick="clickNumButton(15)">F : 0x1111</button>
             </div>
             <div class="deleteBtnList">
                 <button type="button">←</button>
@@ -44,5 +43,6 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
