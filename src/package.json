@@ -1,6 +1,6 @@
 {
-    "name": "electron_quick",
-    "description": "Hello World",
+    "name": "hexadecimal-tool-electron",
+    "description": "Convert hexdecimal decimal binary.",
     "version": "1.0.0",
     "main": "main.js",
     "scripts": {

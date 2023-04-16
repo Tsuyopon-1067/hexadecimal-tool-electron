@@ -1,23 +1,32 @@
 {
-  "name": "hexadecimal-tool-electron",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tsuyopon-1067/hexadecimal-tool-electron.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tsuyopon-1067/hexadecimal-tool-electron/issues"
-  },
-  "homepage": "https://github.com/Tsuyopon-1067/hexadecimal-tool-electron#readme",
-  "devDependencies": {
-    "electron": "^24.1.2"
-  }
+    "name": "hexadecimal-tool-electron",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tsuyopon-1067/hexadecimal-tool-electron.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tsuyopon-1067/hexadecimal-tool-electron/issues"
+    },
+    "homepage": "https://github.com/Tsuyopon-1067/hexadecimal-tool-electron#readme",
+    "devDependencies": {
+        "electron": "^24.1.2",
+        "electron-builder": "^23.6.0"
+    },
+    "mac": {
+        "target": "dmg",
+        "icon": "../ico/ico.png"
+    },
+    "win": {
+        "target": "nsis",
+        "icon": "../ico/ico.png"
+    }
 }
